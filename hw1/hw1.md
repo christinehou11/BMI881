@@ -12,7 +12,7 @@ Stroke mortality rates descreased from 1990 to 2010 in every age and income grou
 - Points represent the estimated mortality rates. Lines connecting the points emphasize the changes over time, and vertical bars show the 95% confidence intervals. 
 - Mortality ranges from approximately 20–80 among people younger than 75 but from about 1,000–2,500 among people aged 75 and older. A common 0–2,500 scale would flatten the younger-than-75 and all-age group, making data invisible. Thus the scales are adjusted for each age group,
 
-### Interpretation
+### Comprehensive graph
 
 For the comprehensive display, I would use the small-multiple matrix with five outcome rows (incidence, prevalence, mortality, MIR, and DALYs lost) and three age-group columns. Thus, the main structure would be 5 x 3 matrix, and include 15 coordinated panels. 
 
