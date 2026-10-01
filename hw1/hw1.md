@@ -2,8 +2,6 @@
 
 ![Alt Text](feigin_mortality_rates.png)
 
-Stroke mortality rates descreased from 1990 to 2010 in every age and income group. The decline was steeper in high-income countries than in low- and middle-income countries. All-age mortality decreased by 37.2% in high-income countries, compared with 19.5% in low- and middle-income countries. Among people aged over 75 years old, the corresponding decline were 36.1% and 15.1%, respectively. Overall, the mortality rates were much higher among older people aged 75 years old and older.
-
 ### Design choice
 
 - Age groups are separated into parallel panels. Age has the largest effect on the scale of mortality. Rates among people aged 75 years and older are much higher than those in the other groups. It keeps the all income groups together within each panel, allowing direct comparisons at the same age and year. 
