@@ -1,6 +1,6 @@
-## 1. If a test has sensitivity = 80% and specificity 80% and the prevalence of the disease is 9/100,000, what is the positive predictive value (aka “precision”) of the test?
+## 1. If a test has sensitivity = 80% and specificity 80% and the prevalence of the disease is 9/100000, what is the positive predictive value (aka “precision”) of the test?
 
-Define disease prevalence be $p = 9/100{,}000$. Let D mean having the disease and + mean a positive test. Precision is $ \mathrm{PPV}=P(D\mid +)$. By Bayes’ theorem,
+Define disease prevalence be $p = 9/100000$. Let D mean having the disease and + mean a positive test. Precision is $ \mathrm{PPV}=P(D\mid +)$. By Bayes’ theorem,
 
 $$
 P(D\mid +)=\frac{P(+\mid D)P(D)}{P(+)} = \frac{P(+\mid D)P(D)}{P(+\mid D)P(D)+P(+\mid D^c)P(D^c)}.
@@ -22,12 +22,12 @@ $$
 \frac{\mathrm{Sensitivity}\times p}
 {\mathrm{Sensitivity}\times p+(1-\mathrm{Specificity})(1-p)}
 =
-\frac{0.8(9/100{,}000)}
-{0.8(9/100{,}000)+0.2(1-9/100{,}000)}
+\frac{0.8(9/100000)}
+{0.8(9/100000)+0.2(1-9/100000)}
 \approx 0.00036.
 $$
 
-Based on the result, only about 0.036% ($\approx 1/2{,}779$) positive results would be a true positive. Equivlently, among 100,000 people, we would have 7.2 true positives and 19,998.2 false positives.
+Based on the result, only about 0.036% ($\approx 1/2779$) positive results would be a true positive. Equivlently, among 100000 people, we would have 7.2 true positives and 19,998.2 false positives.
 
 ## 2. Suppose sensitivity = specificity. What would they have to be to achieve positive predictive value = 50% when prevalence is 9/100,000?
 
@@ -48,16 +48,7 @@ $$
 ## 3. Comment on these results in relation to the precision values provided in Table 2 of Wang et al. (2019)
 
 The paper included 1829 cases and 7665 controls. The resulting sample case proportion was $
-\frac{1829}{1829+7665}\approx 19.3\%$, and obviously, this value is higher than the population disease frequency of 0.009% here.
-
-For all models, $p=9/100{,}000=0.00009$:
-
-$$
-\mathrm{PPV}
-=
-\frac{\mathrm{Sensitivity}\times p}
-{\mathrm{Sensitivity}\times p+(1-\mathrm{Specificity})(1-p)}.
-$$
+\frac{1829}{1829+7665}\approx 19.3\%$, and obviously, this value is higher than the population disease frequency here. For all models, $p=9/100000=0.00009$.
 
 **Combined model:** sensitivity = 83.1%, specificity = 82.3%.
 
@@ -67,8 +58,7 @@ $$
 =
 \frac{0.831(0.00009)}
 {0.831(0.00009)+(1-0.823)(0.99991)}
-\approx 0.0004224
-=\boxed{0.0422\%}.
+\approx \boxed{0.0422\%}.
 
 $$
 
@@ -78,9 +68,7 @@ $$
 \mathrm{PPV}
 =\frac{0.796(0.00009)}
 {0.796(0.00009)+(1-0.712)(0.99991)}
-=\frac{0.00007164}{0.00007164+0.28797408}
-\approx 0.00024871
-=\boxed{0.0249\%}.
+\approx\boxed{0.0249\%}.
 $$
 
 **Medication-only model:** sensitivity = 81.7%, specificity = 78.4%.
@@ -89,14 +77,12 @@ $$
 \mathrm{PPV}
 =\frac{0.817(0.00009)}
 {0.817(0.00009)+(1-0.784)(0.99991)}
-=\frac{0.00007353}{0.00007353+0.21598056}
-\approx 0.00034033
-=\boxed{0.0340\%}.
+\approx\boxed{0.0340\%}.
 $$
 
 Therefore, we could have:
 
-| Input features | Reported precision in Table 2 | Calculated PPV at 9/100,000 |
+| Input features | Table 2 | Here |
 |---|---:|---:|
 | Diagnosis only | 44.3% | 0.0249% |
 | Medication only | 48.8% | 0.0340% |
